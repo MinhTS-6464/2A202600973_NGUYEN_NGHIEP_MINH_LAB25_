@@ -1,0 +1,98 @@
+{
+  "cache_comparison": {
+    "without_cache": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 207.85,
+      "latency_p95_ms": 238.49,
+      "latency_p99_ms": 240.15,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.0,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.05914,
+      "estimated_cost_saved": 0.0,
+      "scenarios": {},
+      "scenario_results": {}
+    },
+    "with_memory_cache": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 234.48,
+      "latency_p99_ms": 239.53,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.59,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.02396,
+      "estimated_cost_saved": 0.03491,
+      "scenarios": {},
+      "scenario_results": {}
+    },
+    "delta": {
+      "latency_p50_ms": -207.85,
+      "latency_p95_ms": -4.01,
+      "estimated_cost": -0.03518,
+      "cache_hit_rate": 0.59
+    }
+  },
+  "redis": {
+    "metrics": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 239.66,
+      "latency_p99_ms": 248.24,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.59,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.02396,
+      "estimated_cost_saved": 0.03491,
+      "scenarios": {},
+      "scenario_results": {}
+    },
+    "shared_state_value": "visible from second instance",
+    "shared_state_score": 1.0,
+    "keys": [
+      "rl:cache:9e413fd814eb",
+      "rl:cache:d354658dc020",
+      "rl:cache:98332d0d1c9c",
+      "rl:cache:fff10da1c72c",
+      "rl:cache:095946136fea",
+      "rl:cache:844ef0143a5c",
+      "rl:cache:4fc3c69b9376",
+      "rl:cache:f840a1cb7d2c",
+      "rl:cache:8baa2cfa11fa",
+      "rl:cache:0bc3b1acf73d",
+      "rl:cache:734852f3cf4a",
+      "rl:cache:3936614ac4c2",
+      "rl:cache:3dab98c0e49e",
+      "rl:cache:dacb2b833659"
+    ]
+  },
+  "concurrent_load": {
+    "workers": 10,
+    "wall_time_ms": 1105.61,
+    "metrics": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 90.77,
+      "latency_p95_ms": 232.65,
+      "latency_p99_ms": 239.34,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.5,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.02798,
+      "estimated_cost_saved": 0.02958,
+      "scenarios": {},
+      "scenario_results": {}
+    }
+  }
+}

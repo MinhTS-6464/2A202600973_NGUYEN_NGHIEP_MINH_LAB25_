@@ -1,0 +1,78 @@
+{
+  "total_requests": 400,
+  "availability": 0.75,
+  "error_rate": 0.25,
+  "latency_p50_ms": 0.01,
+  "latency_p95_ms": 456.33,
+  "latency_p99_ms": 529.1,
+  "fallback_success_rate": 0.4444,
+  "cache_hit_rate": 0.4575,
+  "circuit_open_count": 13,
+  "recovery_time_ms": 2284.8336696624756,
+  "estimated_cost": 0.05173,
+  "estimated_cost_saved": 0.10801,
+  "scenarios": {
+    "primary_timeout_100": "pass",
+    "primary_flaky_50": "pass",
+    "all_healthy": "pass",
+    "all_providers_down": "pass"
+  },
+  "scenario_results": {
+    "primary_timeout_100": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 475.28,
+      "latency_p99_ms": 517.79,
+      "fallback_success_rate": 1.0,
+      "cache_hit_rate": 0.58,
+      "circuit_open_count": 6,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.016056,
+      "estimated_cost_saved": 0.03429
+    },
+    "primary_flaky_50": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 494.22,
+      "latency_p99_ms": 533.47,
+      "fallback_success_rate": 1.0,
+      "cache_hit_rate": 0.6,
+      "circuit_open_count": 5,
+      "recovery_time_ms": 2284.8336696624756,
+      "estimated_cost": 0.014284,
+      "estimated_cost_saved": 0.03546
+    },
+    "all_healthy": {
+      "total_requests": 100,
+      "availability": 1.0,
+      "error_rate": 0.0,
+      "latency_p50_ms": 0.0,
+      "latency_p95_ms": 229.58,
+      "latency_p99_ms": 234.63,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.65,
+      "circuit_open_count": 0,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.02139,
+      "estimated_cost_saved": 0.03826
+    },
+    "all_providers_down": {
+      "total_requests": 100,
+      "availability": 0.0,
+      "error_rate": 1.0,
+      "latency_p50_ms": 0.01,
+      "latency_p95_ms": 0.03,
+      "latency_p99_ms": 499.7,
+      "fallback_success_rate": 0.0,
+      "cache_hit_rate": 0.0,
+      "circuit_open_count": 2,
+      "recovery_time_ms": null,
+      "estimated_cost": 0.0,
+      "estimated_cost_saved": 0.0
+    }
+  }
+}

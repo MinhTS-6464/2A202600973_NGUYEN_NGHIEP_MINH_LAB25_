@@ -1,4 +1,4 @@
-.PHONY: test lint typecheck run-chaos report clean docker-up docker-down
+.PHONY: test lint typecheck run-chaos benchmark report clean docker-up docker-down
 
 test:
 	pytest -q
@@ -11,6 +11,9 @@ typecheck:
 
 run-chaos:
 	python scripts/run_chaos.py --config configs/default.yaml --out reports/metrics.json
+
+benchmark:
+	python scripts/run_benchmarks.py
 
 report:
 	python scripts/generate_report.py --metrics reports/metrics.json --out reports/final_report.md
